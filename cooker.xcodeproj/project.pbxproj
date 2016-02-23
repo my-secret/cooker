@@ -15,6 +15,11 @@
 		018D04FE1C5AEF260012824F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 018D04FC1C5AEF260012824F /* LaunchScreen.storyboard */; };
 		018D05091C5AEF260012824F /* cookerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 018D05081C5AEF260012824F /* cookerTests.m */; };
 		018D05141C5AEF260012824F /* cookerUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 018D05131C5AEF260012824F /* cookerUITests.m */; };
+		018D05221C5AF3D50012824F /* Materia in Resources */ = {isa = PBXBuildFile; fileRef = 018D05211C5AF3D50012824F /* Materia */; };
+		018D053E1C5AF9A90012824F /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 018D053D1C5AF9A90012824F /* MenuViewController.m */; };
+		018D05411C5AFC590012824F /* SquareViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 018D05401C5AFC590012824F /* SquareViewController.m */; };
+		018D05441C5AFC640012824F /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 018D05431C5AFC640012824F /* HomeViewController.m */; };
+		018D05471C5AFC720012824F /* MyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 018D05461C5AFC720012824F /* MyViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +56,15 @@
 		018D050F1C5AEF260012824F /* cookerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = cookerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		018D05131C5AEF260012824F /* cookerUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = cookerUITests.m; sourceTree = "<group>"; };
 		018D05151C5AEF260012824F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		018D05211C5AF3D50012824F /* Materia */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Materia; sourceTree = "<group>"; };
+		018D053C1C5AF9A90012824F /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		018D053D1C5AF9A90012824F /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		018D053F1C5AFC590012824F /* SquareViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SquareViewController.h; sourceTree = "<group>"; };
+		018D05401C5AFC590012824F /* SquareViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SquareViewController.m; sourceTree = "<group>"; };
+		018D05421C5AFC640012824F /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
+		018D05431C5AFC640012824F /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		018D05451C5AFC720012824F /* MyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyViewController.h; sourceTree = "<group>"; };
+		018D05461C5AFC720012824F /* MyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +115,8 @@
 		018D04ED1C5AEF260012824F /* cooker */ = {
 			isa = PBXGroup;
 			children = (
+				018D05211C5AF3D50012824F /* Materia */,
+				018D05231C5AF3F70012824F /* controller */,
 				018D04F11C5AEF260012824F /* AppDelegate.h */,
 				018D04F21C5AEF260012824F /* AppDelegate.m */,
 				018D04F41C5AEF260012824F /* ViewController.h */,
@@ -138,6 +154,21 @@
 				018D05151C5AEF260012824F /* Info.plist */,
 			);
 			path = cookerUITests;
+			sourceTree = "<group>";
+		};
+		018D05231C5AF3F70012824F /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				018D053C1C5AF9A90012824F /* MenuViewController.h */,
+				018D053D1C5AF9A90012824F /* MenuViewController.m */,
+				018D053F1C5AFC590012824F /* SquareViewController.h */,
+				018D05401C5AFC590012824F /* SquareViewController.m */,
+				018D05421C5AFC640012824F /* HomeViewController.h */,
+				018D05431C5AFC640012824F /* HomeViewController.m */,
+				018D05451C5AFC720012824F /* MyViewController.h */,
+				018D05461C5AFC720012824F /* MyViewController.m */,
+			);
+			name = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -248,6 +279,7 @@
 			files = (
 				018D04FE1C5AEF260012824F /* LaunchScreen.storyboard in Resources */,
 				018D04FB1C5AEF260012824F /* Assets.xcassets in Resources */,
+				018D05221C5AF3D50012824F /* Materia in Resources */,
 				018D04F91C5AEF260012824F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -276,6 +308,10 @@
 				018D04F61C5AEF260012824F /* ViewController.m in Sources */,
 				018D04F31C5AEF260012824F /* AppDelegate.m in Sources */,
 				018D04F01C5AEF260012824F /* main.m in Sources */,
+				018D053E1C5AF9A90012824F /* MenuViewController.m in Sources */,
+				018D05411C5AFC590012824F /* SquareViewController.m in Sources */,
+				018D05441C5AFC640012824F /* HomeViewController.m in Sources */,
+				018D05471C5AFC720012824F /* MyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

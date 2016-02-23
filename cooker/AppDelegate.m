@@ -7,7 +7,10 @@
 //
 
 #import "AppDelegate.h"
-
+#import "HomeViewController.h"
+#import "SquareViewController.h"
+#import "MyViewController.h"
+#import "MenuViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +19,44 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    MenuViewController * MenuVC =[[MenuViewController alloc]init];
+    MenuVC.title =@"菜谱";
+    MenuVC.tabBarItem.image=[UIImage imageNamed:@"collect_normal.png"];
+    MenuVC.tabBarItem.selectedImage =[UIImage imageNamed:@"collect_pressed.png"];
+    UINavigationController * menuNC =[[UINavigationController alloc]initWithRootViewController:MenuVC];
+    
+    
+    HomeViewController * homeVC =[[HomeViewController alloc]init];
+    homeVC.title =@"到家";
+    homeVC.tabBarItem.image =[UIImage imageNamed:@"find_normal.png"];
+    homeVC.tabBarItem.selectedImage =[UIImage imageNamed:@"find_pressed.png"];
+    UINavigationController * homeNC =[[UINavigationController alloc]initWithRootViewController:homeVC];
+    
+    SquareViewController * squareVC =[[SquareViewController alloc]init];
+    squareVC.title =@"广场";
+    squareVC.tabBarItem.image =[UIImage imageNamed:@"group_normal.png"];
+    squareVC.tabBarItem.selectedImage = [UIImage imageNamed:@"group_pressed.png"];
+    UINavigationController * squareNC =[[UINavigationController alloc]initWithRootViewController:squareVC];
+    
+    
+    MyViewController * myVC =[[MyViewController alloc]init];
+    myVC.title =@"我的";
+    myVC.tabBarItem.image =[UIImage imageNamed:@"mine_normal.png"];
+    myVC.tabBarItem.selectedImage = [UIImage imageNamed:@"mine_pressed.png"];
+    UINavigationController * myNC =[[UINavigationController alloc]initWithRootViewController:myVC];
+    
+    
+    UITabBarController * Tbc =[[UITabBarController alloc]init];
+    Tbc.viewControllers = @[menuNC,homeNC,squareNC,myNC];;
+    self.window.rootViewController=Tbc;
+    Tbc.selectedIndex=0;
+    
+    
+    
+    
+    
+    
+    
     return YES;
 }
 
